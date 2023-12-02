@@ -45,8 +45,8 @@ class SQLiteConnector:
                                             Biotools_id    TEXT not null
                                                 constraint biotools_tools_pk
                                                     primary key,
-                                            Version        TEXT,
                                             Biotools_CURIE TEXT,
+                                            Version        TEXT,
                                             Name           TEXT not null,
                                             Description    TEXT,
                                             Homepage       TEXT,
@@ -61,8 +61,70 @@ class SQLiteConnector:
             return
         print("Done")
 
+    def create_biotools_operations_table(self):
+        print("Intializing biotools_tools_operations")
+        try:
+            self.connection.execute('''create table biotools_tools_operations
+                                        (
+                                            Biotools_id TEXT    not null
+                                                constraint biotools_tools_operations_biotools_tools_info_Biotools_id_fk
+                                                    references biotools_tools_info,
+                                            EDAM_id     integer not null
+                                                constraint biotools_tools_operations_EDAM_EDAM_id_fk
+                                                    references EDAM,
+                                            constraint biotools_tools_operations_pk
+                                                primary key (Biotools_id, EDAM_id)
+                                        );
+                                        ''')
+        except Error as e:
+            print(f"Error: {str(e)}")
+            return
+        print("Done")
+
+    def create_biotools_topics_table(self):
+        print("Intializing biotools_tools_topics")
+        try:
+            self.connection.execute('''create table biotools_tools_topics
+                                        (
+                                            Biotools_id TEXT not null
+                                                constraint biotools_tools_topics_biotools_tools_info_Biotools_id_fk
+                                                    references biotools_tools_info,
+                                            EDAM_id     TEXT not null
+                                                constraint biotools_tools_topics_EDAM_EDAM_id_fk
+                                                    references EDAM,
+                                            constraint biotools_tools_topics_pk
+                                                primary key (Biotools_id, EDAM_id)
+                                        );
+                                        ''')
+        except Error as e:
+            print(f"Error: {str(e)}")
+            return
+        print("Done")
+
+    def create_biotools_tools_collection(self):
+        print("Intializing biotools_tools_collection")
+        try:
+            self.connection.execute('''create table biotools_tools_topics
+                                                (
+                                                    Biotools_id TEXT not null
+                                                        constraint biotools_tools_topics_biotools_tools_info_Biotools_id_fk
+                                                            references biotools_tools_info,
+                                                    EDAM_id     TEXT not null
+                                                        constraint biotools_tools_topics_EDAM_EDAM_id_fk
+                                                            references EDAM,
+                                                    constraint biotools_tools_topics_pk
+                                                        primary key (Biotools_id, EDAM_id)
+                                                );
+                                                ''')
+        except Error as e:
+            print(f"Error: {str(e)}")
+            return
+        print("Done")
+
     def create_biotools_tables(self):
         self.create_biotools_info_table()
+        self.create_biotools_operations_table()
+        self.create_biotools_topics_table()
 
     def init_db(self, reset, noconfirm):
         if reset:
