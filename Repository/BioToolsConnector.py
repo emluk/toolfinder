@@ -1,4 +1,5 @@
 import json
+
 import requests
 
 base_url = "https://bio.tools/api/t"
@@ -29,4 +30,3 @@ def load():
     with open("./Data/biotools.json", "w") as out_file:
         out_file.write(json.dumps(biotools_dict, indent=4))
     print("Retrieving biotools definition... Done                                                            ")
-

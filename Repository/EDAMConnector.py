@@ -1,9 +1,8 @@
 import csv
 from io import StringIO
 
+import settings
 import requests
-
-import globals
 
 base_url = "https://edamontology.org"
 
@@ -40,5 +39,5 @@ def load():
             "obsolete": obsolete,
             "parents": parents
         })
-    globals.db_connection.insert_edam(edam_rows)
+    settings.db_connection.insert_edam(edam_rows)
     print("Done")
