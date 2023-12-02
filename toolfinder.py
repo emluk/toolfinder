@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 import argparse
-import json
-import requests
 
-import DataAccess.DataBase
 import globals
 from Repository import EDAMConnector, BioToolsConnector
 
@@ -21,7 +18,8 @@ def main():
 
     # subcommand for database initialization
     dbinit_parser = subparsers.add_parser('db-init')
-    dbinit_parser.add_argument('--reset', '-r', action="store_true", dest="reset_db", help="If set, the database will be reset completely")
+    dbinit_parser.add_argument('--reset', '-r', action="store_true", dest="reset_db",
+                               help="If set, the database will be reset completely")
 
     # subcommand for retrieval of definitions
     retrieve_parser = subparsers.add_parser('load')

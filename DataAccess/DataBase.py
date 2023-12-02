@@ -40,11 +40,12 @@ class SQLiteConnector:
         except Error as e:
             print(f"Connection to database failed with: {e}")
 
-    def escape_input(self, value):
+    @staticmethod
+    def escape_input(value):
         value = value.replace('"', "'")
         return value
 
-    def insert_EDAM(self, rows):
+    def insert_edam(self, rows):
         for row in rows:
             obsolete_int = 0
             if row["obsolete"]:
@@ -60,5 +61,3 @@ class SQLiteConnector:
                                         values ("{row["edam_id"]}", "{row["edam_category"]}","{row["edam_url"]}", "{row["name"]}", "{row["definition"]}", "{row["synonyms"]}", {obsolete_int}, "{row["parents"]}")
                                     ''')
         self.connection.commit()
-
-
