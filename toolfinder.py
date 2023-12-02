@@ -4,6 +4,7 @@ import json
 import requests
 
 import DataAccess.DataBase
+import globals
 from Repository import EDAMConnector, BioToolsConnector
 
 
@@ -38,9 +39,8 @@ def main():
             return -1
         dispatch_load(args.load_all, args.definition)
     elif args.command == 'db-init':
-        global db_connection
-        db_connection = DataAccess.DataBase.SQLiteConnector()
-        db_connection.create_db()
+
+        globals.db_connection.create_db()
     elif args.command == 'predecessor':
         print("Not implemented yet")
     elif args.command == 'replacement':
