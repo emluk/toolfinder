@@ -15,8 +15,9 @@ def main():
 
     # subcommand for configuration customization
     config_parser = subparsers.add_parser('config')
-    config_parser.add_argument('key', help="Option to configure. Format 'section.variable'")
-    config_parser.add_argument('value', help="The value to set")
+    config_parser.add_argument('key', nargs="?", help="Option to configure. Format 'section.variable'")
+    config_parser.add_argument('value', nargs="?", help="The value to set")
+    config_parser.add_argument('--list', action='store_true', dest='list_options', help="Display current configuration")
 
     # subcommand for database initialization
     dbinit_parser = subparsers.add_parser('db-init')
@@ -43,14 +44,27 @@ def main():
     elif args.command == 'db-init':
         settings.db_connection.init_db(args.reset_db, args.noconfirm)
     elif args.command == 'config':
-        key_regex = re.compile(r'^([a-zA-Z]+\.)([a-zA-Z]+_)*([a-zA-Z]+)$')
-        if not key_regex.match(args.key):
-            print("Invalid format")
-            config_parser.print_help()
-            sys.exit(-1)
-        configure(args.key, args.value)
+        if not args.list_options:
+            if args.key is None or args.value is None:
+                print("Missing value")
+                config_parser.print_help()
+                sys.exit(-1)
+            key_regex = re.compile(r'^([a-zA-Z]+\.)([a-zA-Z]+_)*([a-zA-Z]+)$')
+            if not key_regex.match(args.key):
+                print("Invalid format")
+                config_parser.print_help()
+                sys.exit(-1)
+            configure(args.key, args.value)
+        else:
+            print_configuration()
     else:
         print(f"Invalid command {args.command}")
+
+
+def print_configuration():
+    for section in list(settings.config.keys()):
+        for item in list(settings.config[section].keys()):
+            print(f"{section}.{item}={settings.config[section][item]}")
 
 
 def configure(key, value):
