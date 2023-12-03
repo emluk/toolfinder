@@ -4,8 +4,6 @@ import sys
 from sqlite3 import Error
 
 
-
-
 class SQLiteConnector:
     def __init__(self, db_file):
         self.connection = None
@@ -163,8 +161,54 @@ class SQLiteConnector:
                     row[key] = self.escape_input(str(row[key]))
             self.connection.execute(f'''insert into EDAM (EDAM_id, EDAM_category, EDAM_url, Name, Definition, Synonyms, Obsolete, Parents)
                                         values ("{row["edam_id"]}", "{row["edam_category"]}","{row["edam_url"]}", "{row["name"]}", "{row["definition"]}", "{row["synonyms"]}", {obsolete_int}, "{row["parents"]}")
+                                        on conflict do nothing;
                                     ''')
         self.connection.commit()
 
+
     def insert_biotools(self, items):
-        print("bla")
+        for item in items:
+            biotools_id = item['biotoolsID']
+            try:
+                version = item['version'][0]
+            except Exception:
+                version = None
+            biotools_curie = item['biotoolsCURIE']
+            name = item['name']
+            description = self.escape_input(item['description'])
+            homepage = item['homepage']
+            try:
+                docs = item['documentation'][0]['url']
+            except Exception:
+                docs = None
+            published = item['additionDate']
+            updated = item['lastUpdate']
+            try:
+                self.connection.execute(f'''insert into biotools_tools_info (Biotools_id, Version, Biotools_CURIE, Name, Description, Homepage, Documentation,
+                                                     Published, LastUpdate)
+                                                    values ("{biotools_id}", "{version}", "{biotools_curie}", "{name}", "{description}", "{homepage}", "{docs}", "{published}", "{updated}")
+                                                    on conflict do nothing;
+                            ''')
+            except Error as e:
+                print(f"Entry '{biotools_id}' caused error '{str(e)}'")
+
+            for i in range(0, len(item['function'])): #TODO: add input and output here if available
+                for op in item['function'][i]['operation']:
+                    edam_id = op['uri'].split("/")[-1]
+                    try:
+                        self.connection.execute(f'''insert into biotools_tools_operations (Biotools_id, EDAM_id)
+                                                    values("{biotools_id}", "{edam_id}") on conflict do nothing
+                        ''')
+                    except Error as e:
+                        print(f"Entry '{biotools_id}' caused error '{str(e)}'")
+
+            for topic in item['topic']:
+                edam_id = topic['uri'].split("/")[-1]
+                try:
+                    self.connection.execute(f'''insert into biotools_tools_topics (Biotools_id, EDAM_id)
+                                                values("{biotools_id}", "{edam_id}") on conflict do nothing
+                    ''')
+                except Error as e:
+                    print(f"Entry '{biotools_id}' caused error '{str(e)}'")
+
+        self.connection.commit()
