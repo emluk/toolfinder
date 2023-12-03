@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 import argparse
-import json
-import requests
 
-import DataAccess.DataBase
+import settings
 from Repository import EDAMConnector, BioToolsConnector
 
 
@@ -20,7 +18,10 @@ def main():
 
     # subcommand for database initialization
     dbinit_parser = subparsers.add_parser('db-init')
-    dbinit_parser.add_argument('--reset', '-r', action="store_true", dest="reset_db", help="If set, the database will be reset completely")
+    dbinit_parser.add_argument('--reset', '-r', action="store_true", dest="reset_db", default=False,
+                               help="If set, the database will be reset completely")
+    dbinit_parser.add_argument('--noconfirm', action="store_true", dest="noconfirm", default=False,
+                               help="If set no prompt before deleting the database file is shown")
 
     # subcommand for retrieval of definitions
     retrieve_parser = subparsers.add_parser('load')
@@ -38,9 +39,7 @@ def main():
             return -1
         dispatch_load(args.load_all, args.definition)
     elif args.command == 'db-init':
-        global db_connection
-        db_connection = DataAccess.DataBase.SQLiteConnector()
-        db_connection.create_db()
+        settings.db_connection.init_db(args.reset_db, args.noconfirm)
     elif args.command == 'predecessor':
         print("Not implemented yet")
     elif args.command == 'replacement':
