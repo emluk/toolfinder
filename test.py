@@ -1,9 +1,38 @@
 # import json
 # import os.path
 #
-# import settings
+import sys
+
+import settings
 # import nltk
 # nltk.data.path = [settings.config["nltk"]["path"]]
+
+x = [331, 1827, 1678, 3044, 2671, 2574, 2718, 2240, 2042, 1716, 1514, 1244, 1044, 876, 656, 565, 402, 330, 311, 216, 145, 134, 94, 82, 60, 39, 35, 36, 20, 22, 12, 13, 11, 6, 6, 5, 2, 4, 1, 2, 5, 3, 1, 1, 2, 0, 0, 1]
+i = 0
+for y in x:
+    print(f"({i}, {y}) ", end="")
+    i+=1
+sys.exit(0)
+
+query = settings.db_connection.connection.execute("SELECT Biotools_id from biotools_tools_info")
+result = query.fetchall()
+minCount = 100
+maxCount = -1
+counts = [0] * 100
+for row in result:
+    tool_id = row[0]
+    countObj = settings.db_connection.connection.execute(f"""SELECT COUNT(*) from biotools_tools_operations where instr('{tool_id}', Biotools_Id)""")
+    count = countObj.fetchone()[0]
+    if count < minCount:
+        minCount = count
+    if count > maxCount:
+        maxCount = count
+    counts[count] += 1
+
+print(counts)
+print(minCount)
+print(maxCount)
+
 #
 # #if os.path.isfile(settings.config["nltk"]["path"]+r"\tokenizers\punkt.zip"):
 #
@@ -13,11 +42,10 @@
 # except LookupError:
 #     nltk.download('popular', download_dir=settings.config["nltk"]["path"])
 #     nltk.download('stopwords', download_dir=settings.config["nltk"]["path"])
-#
 # from nltk.corpus import stopwords, wordnet
 # from nltk.tokenize import sent_tokenize, word_tokenize
 # from nltk.stem import SnowballStemmer, WordNetLemmatizer
-#
+# #
 #
 #
 # def process(sentence):
@@ -90,9 +118,3 @@
 # print(source)
 # print(json.dumps(operations, indent=4))
 #
-
-import settings
-
-x = settings.db_connection.connection.execute(f"Select Biotools_id from biotools_tools_info where instr(Description, 'Protein') and instr(Description, 'Interaction')")
-for item in x.fetchall():
-    print(item)

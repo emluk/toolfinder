@@ -1,6 +1,6 @@
 import configparser
 
-from DataAccess.Database import SQLiteConnector
+from DataAccess.DataBase import SQLiteConnector
 
 config = configparser.ConfigParser()
 config.read("toolfinder.ini")
