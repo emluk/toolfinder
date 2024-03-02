@@ -1,6 +1,6 @@
 import json
 content = None
-with open("./Data/biotools_stats.json", "r") as in_file:
+with open("../Data/biotools_stats.json", "r") as in_file:
     content = in_file.read()
 
 parsed = json.loads(content)

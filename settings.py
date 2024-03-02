@@ -1,9 +1,9 @@
 import configparser
 
-from DataAccess.DataBase import SQLiteConnector
+from DataAccess.Database import SQLiteConnector
 
 config = configparser.ConfigParser()
-config.read("toolfinder.ini")
+config.read("D:\\Priv\\repository\\toolfinder\\toolfinder.ini")
 
 db_connection = SQLiteConnector(config['db']['path'])
 db_connection.connect()

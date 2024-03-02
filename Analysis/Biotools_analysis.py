@@ -64,7 +64,7 @@ def main():
     db = settings.db_connection.connection
     biotools_data = []
 
-    with open("./Data/biotools_stats.json", "w") as outfile:
+    with open("../Data/biotools_stats.json", "w") as outfile:
         all_data = db.execute("SELECT * FROM biotools_tools_info")
         for row in all_data:
             tool_data = {}
