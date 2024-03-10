@@ -43,6 +43,22 @@ class SQLiteConnector:
             return
         print("Done")
 
+    def create_edam_operations_structure_table(self):
+        print("Initializing EDAM Operations structure Table...", end=" ")
+        try:
+            self.connection.execute('''create table if not exists EDAM_operations_structure 
+            (
+                Parent_EDAM_id TEXT not null,
+                Child_EDAM_id  TEXT,
+                constraint EDAM_operations_structure_pk
+                    primary key (Parent_EDAM_id, Child_EDAM_id)
+            );
+            ''')
+        except Error as e:
+            print(f"Error: {str(e)}")
+            return
+        print("Done")
+
     def insert_edam(self, rows):
         for row in rows:
             obsolete = "FALSE"
@@ -56,6 +72,37 @@ class SQLiteConnector:
                                         on conflict do nothing;
                                     ''')
         self.connection.commit()
+        # building structure of edam operations table
+        edam_operations = self.connection.execute(
+            """SELECT EDAM_id, Parents FROM EDAM WHERE EDAM_category = 'operation' AND Obsolete = 0""").fetchall()
+
+        tree = {}
+        for x in edam_operations:
+            edam_id = x[0]
+            edam_parents_unfiltered = x[1].replace('[', '').replace(']', '').replace("'", '').split(',')
+            edam_parents = []
+            for parent in edam_parents_unfiltered:
+                if 'http://edamontology.org/operation' in parent:
+                    parent_name = parent.replace('http://edamontology.org/', '').replace(' ', '')
+                    edam_parents.append(parent_name.replace(' ', ''))
+                    if parent_name not in tree.keys():
+                        tree[parent_name] = []
+                    tree[parent_name].append(edam_id.replace(' ', ''))
+
+            if edam_id not in tree.keys():
+                tree[edam_id.replace(' ', '')] = []
+
+        for x in tree.keys():
+            if len(tree[x]) == 0:
+                self.connection.execute(f"""insert into EDAM_operations_structure (Parent_EDAM_id, Child_EDAM_id) 
+                                values("{x}", "")
+                                on conflict do nothing;""")
+                continue
+            for child in tree[x]:
+                self.connection.execute(f"""insert into EDAM_operations_structure (Parent_EDAM_id, Child_EDAM_id) 
+                                values("{x}", "{child}")
+                                on conflict do nothing;""")
+                self.connection.commit()
     # endregion
 
     # region Biotools
@@ -162,11 +209,56 @@ class SQLiteConnector:
             return
         print("Done")
 
+    def create_biotools_tools_inputs(self):
+        print("Initializing biotools_tools_inputs...", end=" ")
+        try:
+            self.connection.execute('''create table biotools_tools_inputs
+                (
+                    Biotools_id TEXT not null,
+                    EDAM_id_data     TEXT,
+                    EDAM_id_format   TEXT,
+                    constraint biotools_tools_inputs_pk
+                        primary key (Biotools_id, EDAM_id_data, EDAM_id_format),
+                    constraint biotools_tools_inputs_Biotools_id_fk
+                        foreign key (Biotools_id) references biotools_tools_info (Biotools_id),
+                    constraint biotools_tools_inputs_EDAM_id_fk
+                        foreign key (EDAM_id_data, EDAM_id_format) references EDAM (EDAM_id, EDAM_id)
+                );
+                
+                ''')
+        except Error as e:
+            print(f"Error: {str(e)}")
+            return
+        print("Done")
+
+    def create_biotools_tools_outputs(self):
+        print("Initializing biotools_tools_outputs...", end=" ")
+        try:
+            self.connection.execute('''create table biotools_tools_outputs
+                (
+                    Biotools_id TEXT not null,
+                    EDAM_id_data     TEXT,
+                    EDAM_id_format   TEXT,
+                    constraint biotools_tools_outputs_pk
+                        primary key (Biotools_id, EDAM_id_data, EDAM_id_format),
+                    constraint biotools_tools_outputs_Biotools_id_fk
+                        foreign key (Biotools_id) references biotools_tools_info (Biotools_id),
+                    constraint biotools_tools_outputs_EDAM_id_fk
+                        foreign key (EDAM_id_data, EDAM_id_format) references EDAM (EDAM_id, EDAM_id)
+                );
+                ''')
+        except Error as e:
+            print(f"Error: {str(e)}")
+            return
+        print("Done")
+
     def create_biotools_tables(self):
         self.create_biotools_info_table()
         self.create_biotools_operations_table()
         self.create_biotools_topics_table()
         self.create_biotools_tools_type()
+        self.create_biotools_tools_inputs()
+        self.create_biotools_tools_outputs()
 
     def insert_biotools(self, items):
         for item in items:
@@ -203,7 +295,18 @@ class SQLiteConnector:
                            ''')
                     except Error as e:
                         print(f"biotools_tools_operations: Inserting '{biotools_id}', '{edam_id}' caused error '{str(e)}'")
-
+                for input_item in item['function'][i]['input']:
+                    data_id = input_item['data']['uri'].split("/")[-1]
+                    for format_item in input_item['format']:
+                        format_id = format_item['uri'].split("/")[-1]
+                        self.connection.execute(f'''insert into biotools_tools_inputs (Biotools_id, EDAM_id_data, EDAM_id_format)
+                                                    values ("{biotools_id}", "{data_id}", "{format_id}") on conflict do nothing''')
+                for output_item in item['function'][i]['output']:
+                    data_id = output_item['data']['uri'].split("/")[-1]
+                    for format_item in output_item['format']:
+                        format_id = format_item['uri'].split("/")[-1]
+                        self.connection.execute(f'''insert into biotools_tools_outputs (Biotools_id, EDAM_id_data, EDAM_id_format)
+                                                    values ("{biotools_id}", "{data_id}", "{format_id}") on conflict do nothing''')
             for topic in item['topic']:
                 edam_id = topic['uri'].split("/")[-1]
                 try:
@@ -243,6 +346,7 @@ class SQLiteConnector:
             self.connection.execute("pragma integrity_check;")
             self.connection.commit()
         self.create_edam_table()
+        self.create_edam_operations_structure_table()
         self.create_biotools_tables()
         if self.connection is not None:
             self.connection.close()
