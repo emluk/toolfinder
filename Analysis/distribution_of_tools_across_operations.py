@@ -41,9 +41,12 @@ for key in x.keys():
     count += 1
 
 plt.figure(1, figsize=(15, 10))
+plt.title("Distributions of Tools across Operations (Top 50)")
+plt.xlabel("Number of Tools with Operation")
+plt.ylabel("Operation")
 plt.barh(names, counts)
 plt.tight_layout()
-plt.savefig('D:\\Priv\\repository\\toolfinder\\Data\\images\\distribution_of_tools_across_operations.svg')
+#plt.savefig('D:\\Priv\\repository\\toolfinder\\Data\\images\\distribution_of_tools_across_operations.pdf', format='pdf')
 plt.show()
 
 end = datetime.datetime.now()
