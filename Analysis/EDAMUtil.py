@@ -4,6 +4,7 @@ db = settings.db_connection.connection
 
 def get_all_suboperations(operation):
     operations = []
+    operations.append(operation)
     ops_raw = db.execute(f"""SELECT * FROM EDAM_operations_structure WHERE Parent_EDAM_id='{operation}'""").fetchall()
 
     if(len(ops_raw) == 1 and ops_raw[0][1] == ''):

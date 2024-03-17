@@ -28,7 +28,7 @@ print(len(sequence_tools))
 sequence_description_counts = {}
 protein_description_counts = {}
 step = 10
-for i in range(0,140, step):
+for i in range(0,150, step):
     if i == 0:
         sequence_description_counts[f"{i}-{i+step}"] = {
             'min': i,
@@ -108,5 +108,5 @@ plt.bar(X_axis + 0.2, protein_values, 0.4, label="Protein Sequence Analysis")
 plt.xticks(X_axis, ranges,rotation=45)
 plt.legend()
 plt.tight_layout()
-plt.savefig('D:\\Priv\\repository\\toolfinder\\Data\\images\\protein_sequence_analysis_and_sequence_alignment_description_length.pdf', format='pdf')
+plt.savefig('D:\\Priv\\repository\\toolfinder\\Data\\images\\protein_sequence_analysis_and_sequence_alignment_description_length.png', format='png')
 plt.show()
