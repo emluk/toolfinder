@@ -323,7 +323,13 @@ class SQLiteConnector:
                     ''')
                 except Error as e:
                     print(f"biotools_tools_type: Inserting '{biotools_id}', '{tool_type}' caused error '{str(e)}'")
-
+            if len(item['toolType']) == 0:
+                try:
+                    self.connection.execute(f'''insert into biotools_tools_type (Biotools_id, Tool_type)
+                                                values("{biotools_id}", "Unknown") on conflict do nothing
+                    ''')
+                except Error as e:
+                    print(f"biotools_tools_type: Inserting '{biotools_id}', 'Unknown' caused error '{str(e)}'")
         self.connection.commit()
 
     # endregion
