@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 import argparse
+import json
 import re
 import sys
 
+import NLP.DataSet.DataSet
+from NLP.Dictionary import Dictionary
+from Search import Engine
+from DataBase.DataAccess import BioToolsConnector, EDAMConnector
 import settings
-from Repository import EDAMConnector, BioToolsConnector
+from DataBase.Loader import BioToolsLoader, EDAMLoader
 
 
 def main():
@@ -31,7 +36,38 @@ def main():
     retrieve_parser.add_argument('--all', action="store_true", dest="load_all",
                                  help="Retrieve all definitions (EDAM, biotools, synbiotools)")
     retrieve_parser.add_argument('definition', nargs="?", choices=["EDAM", "biotools", "synbiotools"])
+
+    search_parser = subparsers.add_parser('search')
+    search_parser.add_argument('--operation', action="append", required=False, dest="operation", default=[])
+    search_parser.add_argument('--keyword', action="append", required=False, dest="keyword", default=[])
+    search_parser.add_argument('-o', '--out-file', required=False, dest="out_file", default="")
+
+    dataset_parser = subparsers.add_parser('dataset')
+    dataset_sub_parsers = dataset_parser.add_subparsers(dest="dscommand")
+
+    dataset_create_parser = dataset_sub_parsers.add_parser('create')
+    dataset_create_parser.add_argument('--operation', action="append", required=False, dest="operation", default=[])
+    dataset_create_parser.add_argument('--keyword', action="append", required=False, dest="keyword", default=[])
+    dataset_create_parser.add_argument('-o', '--out-file', required=False, dest="out_file", default=None)
+
+    dataset_label_parser = dataset_sub_parsers.add_parser('label')
+    dataset_label_parser.add_argument('--file', required=True, dest="out_file")
+
+    dataset_split_parser = dataset_sub_parsers.add_parser('split')
+    dataset_split_parser.add_argument('--keyword', required=True, dest='split_property')
+    dataset_split_parser.add_argument('--proportion', required=True, dest="split_proportion")
+    dataset_split_parser.add_argument('--file', required=True, dest="split_in_file")
+    dataset_split_parser.add_argument('--out-dir', required=True, dest="split_out_dir")
+
+    dictionary_parser = subparsers.add_parser('dictionary')
+    dict_sub_parsers = dictionary_parser.add_subparsers(dest="dictcommand")
+    dict_create_parser = dict_sub_parsers.add_parser('create')
+    dict_create_parser.add_argument('--keyword', required=True, dest="keywords")
+    dict_create_parser.add_argument("--property", dest='property', required=True)
+    dict_create_parser.add_argument("--file", dest="file", required=True)
+    dict_create_parser.add_argument("--out-file", dest="out_file", required=True)
     args = parser.parse_args()
+
 
     # validate arguments and dispatch action
 
@@ -43,6 +79,9 @@ def main():
         dispatch_load(args.load_all, args.definition)
     elif args.command == 'db-init':
         settings.db_connection.init_db(args.reset_db, args.noconfirm)
+        EDAMConnector.create_edam_table()
+        EDAMConnector.create_edam_operations_structure_table()
+        BioToolsConnector.create_biotools_tables()
     elif args.command == 'config':
         if not args.list_options:
             if args.key is None or args.value is None:
@@ -57,6 +96,23 @@ def main():
             configure(args.key, args.value)
         else:
             print_configuration()
+    elif args.command == 'search':
+        result = Engine.search_tools(args.operation, args.keyword)
+        if args.out_file == "":
+            print(result)
+        else:
+            with open(args.out_file, 'w') as of:
+                json.dump(result, of)
+    elif args.command == 'dataset':
+        if args.dscommand == 'create':
+            NLP.DataSet.DataSet.create(args.operation, args.keyword, args.out_file)
+        elif args.dscommand == 'label':
+            NLP.DataSet.DataSet.LabellingTool(args.out_file, args.out_file)
+        elif args.dscommand == 'split':
+            NLP.DataSet.DataSet.split(args.split_property, args.split_proportion, args.split_in_file, args.split_out_dir)
+    elif args.command == 'dictionary':
+        if args.dictcommand == 'create':
+            NLP.Dictionary.Dictionary.create(args.keywords, args.property, args.file, args.out_file)
     else:
         print(f"Invalid command {args.command}")
 
@@ -87,13 +143,13 @@ def configure(key, value):
 
 def dispatch_load(load_all, definition):
     if load_all:
-        EDAMConnector.load()
-        BioToolsConnector.load()
+        EDAMLoader.load()
+        BioToolsLoader.load()
         # rest of the definitions here
         return
     dispatch_map = {
-        "EDAM": EDAMConnector.load,
-        "biotools": BioToolsConnector.load
+        "EDAM": EDAMLoader.load,
+        "biotools": BioToolsLoader.load
     }
     dispatch_map[definition]()
 

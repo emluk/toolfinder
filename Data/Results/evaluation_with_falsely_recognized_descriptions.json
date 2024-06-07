@@ -1,0 +1,1914 @@
+{
+  "parallel": {
+    "KeywordSearch": {
+      "TP": 39,
+      "FP": 5,
+      "FN": 0,
+      "TN": 50,
+      "Accuracy": 0.9468085106382979,
+      "Precision": 0.8863636363636364,
+      "Recall": 1.0,
+      "FalsePositive": [
+        {
+          "id": "medicc2",
+          "description": "Whole-genome doubling-aware copy number phylogenies for cancer evolution with MEDICC2. Chromosomal instability (CIN) and somatic copy number alterations (SCNA) play a key role in the evolutionary process that shapes cancer genomes. SCNAs comprise many classes of clinically relevant events, such as localised amplifications, gains, losses, loss-of-heterozygosity (LOH) events, and recently discovered parallel evolutionary events revealed by multi-sample phasing. These events frequently appear jointly with whole genome doubling (WGD), a transformative event in tumour evolution, which generates tetraploid or near-tetraploid cells. WGD events are often clonal, occuring before the emergence of the most recent common ancestor, and have been associated with increased CIN, poor patient outcome and are currently being investigated as potential therapeutic targets"
+        },
+        {
+          "id": "petal",
+          "description": "PETAL (ParallEl paThways AnaLyzer): a python tool for deep analysis of biological pathways.\n\n\nPETAL software is written in the Python 3 programming language. It contains a set of tools for pathway analysis and discovery of novel therapeutic targets. The approach allows you to scan and perform a in-depth search of the biological pathway to analyze less recurrent pathways, detect nodes that are far from the initial target nodes and showing the pathway of origin from which it was taken the gene."
+        },
+        {
+          "id": "deeptrio",
+          "description": "A ternary prediction system for protein-protein interaction using mask multiple parallel convolutional neural networks."
+        },
+        {
+          "id": "mica-aligner",
+          "description": "New short-read aligner that is optimized in view of MIC\u2019s limitation and the extra parallelism inside each MIC core."
+        },
+        {
+          "id": "quest",
+          "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+        }
+      ],
+      "FalseNegative": []
+    },
+    "WordDistance": {
+      "0": {
+        "TP": 16,
+        "FP": 1,
+        "FN": 23,
+        "TN": 54,
+        "Accuracy": 0.7446808510638298,
+        "Precision": 0.9411764705882353,
+        "Recall": 0.41025641025641024,
+        "FalsePositive": [
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "ParGenes",
+            "description": "Tool for massively parallel model selection and phylogenetic tree inference on thousands of genes."
+          },
+          {
+            "id": "corenup",
+            "description": "CORENup is a deep learning model for nucleosome identification. CORENup processes a DNA sequence as input using one-hot representation and combines in a parallel fashion a fully convolutional neural network and a recurrent layer. These two parallel levels are devoted to catching both non periodic and periodic DNA string features."
+          },
+          {
+            "id": "MasterOfPores",
+            "description": "Parallel and scalable workflow for the analysis of Oxford Nanopore direct RNA sequencing datasets.\n\nNextflow pipeline for analysis of Nanopore reads (from RNA/cDNA/DNA).\n\nPlease read the documentation here: https://biocorecrg.github.io/master_of_pores/.\n\nNextflow pipeline for analysis of Nanopore data from direct RNA sequencing. This is a joint project between CRG bioinformatics core and Epitranscriptomics and RNA Dynamics research group."
+          },
+          {
+            "id": "rpmcmc",
+            "description": "A parallel MCMC algorithm for discovering diverse motifs from large sequence sets."
+          },
+          {
+            "id": "spark-vs",
+            "description": "Spark-based library for setting up massively parallel Structure-Based Virtual Screening (SBVS) pipelines in Spark."
+          },
+          {
+            "id": "profeatx",
+            "description": "A parallelized protein feature extraction suite for machine learning."
+          },
+          {
+            "id": "promocell",
+            "description": "ProMoCell (Protein interaction-based functional Modules of the Cell of an organism) is a network-based zoning approach that can determine the functional modules of a cell of an organism and can potentially be utilized for parallel whole-cell simulation. ProMoCell is a single-click web service and it is very simple, user-friendly and easy to use. Presumably, no other web services like ProMoCell exists till date."
+          },
+          {
+            "id": "SW-Tandem",
+            "description": "Tool for large-scale peptide identification with parallel spectrum dot product on Sunway TaihuLight."
+          },
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "sledgehmmer",
+            "description": "Tool for searching the Pfam database using a parallelized version of the program hmmpfam. The user can perform queries with one or more sequences at a time and then receive the results by e-mail."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "PepVis",
+            "description": "PepVis tool is a python based GUI pipeline which can be used to model and prepare large-scale peptide structure from the sequence and also to perform large-scale peptide virtual screening. PepVis integrates ModPep and Gromacs for modelling and structure optimization of the peptides, while it integrates AutoDock Vina,ZDOCK, AutoDock CrankPep(ADCP) for performing peptide virtual screening. \nThe protein-peptide complexes can be rescored using ZRANK2 and the flexible refinement of the large protein-peptide complexes can also be performed using FlexPepDock. The parallel job execution has been implemented using GNU parallel and the user can provide inputs using GUI which will produce the bash script based on the customized input provided by the user and can be run in terminal."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          },
+          {
+            "id": "neurodevsim",
+            "description": "NeuroDevSim is a Neural Development Simulator for Linux of MacOS environments. It is a parallel and phenomenological computational framework to grow large numbers of neuronal morphologies (and resultant microcircuits) simultaneously according to growth-rules expressed in terms of interactions with the environment and internal variables:."
+          },
+          {
+            "id": "mpgafold",
+            "description": "Massively parallel genetic algorithm that predicts RNA secondary structure."
+          },
+          {
+            "id": "parkvfinder",
+            "description": "Parallel KVFinder (parKVFinder) is an open-source software designed for the detection and spatial characterization (shape, volume, area and surrounding residues) of any type of biomolecular cavity. parKVFinder is available alongside an easy-to-use PyMOL plugin (PyMOL2 parKVFinder Tools) with an intuitive graphical user interface that allows users to explore customizable parameters for cavity detection and characterization."
+          },
+          {
+            "id": "pykvfinder",
+            "description": "Python-C Parallel KVFinder (pyKVFinder) is an efficient and integrable Python package for biomolecular cavity detection and characterization in data science. Besides conventional cavity properties such as volume and area, which are stored as Python dictionaries, pyKVFinder computes cavity depth and hydropathy. Similar to cavity points, these spatial and physicochemical properties are stored as Python ndarrays and can be visualized using Python molecular visualization widgets. In general, pyKVFinder is designed for efficient scripting routines built on easy-to-handle data structures, such as Python dictionaries and NumPy N-dimensional arrays (ndarrays), and can be building blocks for data science and drug design applications."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "parmigene",
+            "description": "The package provides a parallel estimation of the mutual information based on entropy estimates from k-nearest neighbours distances and algorithms for the reconstruction of gene regulatory networks."
+          },
+          {
+            "id": "qpms9",
+            "description": "Parallel exact qPMS (quorum Planted Motif Search) algorithm that offers significant runtime improvements on DNA and protein datasets."
+          }
+        ]
+      },
+      "1": {
+        "TP": 23,
+        "FP": 1,
+        "FN": 16,
+        "TN": 54,
+        "Accuracy": 0.8191489361702128,
+        "Precision": 0.9583333333333334,
+        "Recall": 0.5897435897435898,
+        "FalsePositive": [
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "corenup",
+            "description": "CORENup is a deep learning model for nucleosome identification. CORENup processes a DNA sequence as input using one-hot representation and combines in a parallel fashion a fully convolutional neural network and a recurrent layer. These two parallel levels are devoted to catching both non periodic and periodic DNA string features."
+          },
+          {
+            "id": "spark-vs",
+            "description": "Spark-based library for setting up massively parallel Structure-Based Virtual Screening (SBVS) pipelines in Spark."
+          },
+          {
+            "id": "profeatx",
+            "description": "A parallelized protein feature extraction suite for machine learning."
+          },
+          {
+            "id": "promocell",
+            "description": "ProMoCell (Protein interaction-based functional Modules of the Cell of an organism) is a network-based zoning approach that can determine the functional modules of a cell of an organism and can potentially be utilized for parallel whole-cell simulation. ProMoCell is a single-click web service and it is very simple, user-friendly and easy to use. Presumably, no other web services like ProMoCell exists till date."
+          },
+          {
+            "id": "SW-Tandem",
+            "description": "Tool for large-scale peptide identification with parallel spectrum dot product on Sunway TaihuLight."
+          },
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "sledgehmmer",
+            "description": "Tool for searching the Pfam database using a parallelized version of the program hmmpfam. The user can perform queries with one or more sequences at a time and then receive the results by e-mail."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          },
+          {
+            "id": "neurodevsim",
+            "description": "NeuroDevSim is a Neural Development Simulator for Linux of MacOS environments. It is a parallel and phenomenological computational framework to grow large numbers of neuronal morphologies (and resultant microcircuits) simultaneously according to growth-rules expressed in terms of interactions with the environment and internal variables:."
+          },
+          {
+            "id": "parkvfinder",
+            "description": "Parallel KVFinder (parKVFinder) is an open-source software designed for the detection and spatial characterization (shape, volume, area and surrounding residues) of any type of biomolecular cavity. parKVFinder is available alongside an easy-to-use PyMOL plugin (PyMOL2 parKVFinder Tools) with an intuitive graphical user interface that allows users to explore customizable parameters for cavity detection and characterization."
+          },
+          {
+            "id": "pykvfinder",
+            "description": "Python-C Parallel KVFinder (pyKVFinder) is an efficient and integrable Python package for biomolecular cavity detection and characterization in data science. Besides conventional cavity properties such as volume and area, which are stored as Python dictionaries, pyKVFinder computes cavity depth and hydropathy. Similar to cavity points, these spatial and physicochemical properties are stored as Python ndarrays and can be visualized using Python molecular visualization widgets. In general, pyKVFinder is designed for efficient scripting routines built on easy-to-handle data structures, such as Python dictionaries and NumPy N-dimensional arrays (ndarrays), and can be building blocks for data science and drug design applications."
+          },
+          {
+            "id": "qpms9",
+            "description": "Parallel exact qPMS (quorum Planted Motif Search) algorithm that offers significant runtime improvements on DNA and protein datasets."
+          }
+        ]
+      },
+      "2": {
+        "TP": 25,
+        "FP": 1,
+        "FN": 14,
+        "TN": 54,
+        "Accuracy": 0.8404255319148937,
+        "Precision": 0.9615384615384616,
+        "Recall": 0.6410256410256411,
+        "FalsePositive": [
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "corenup",
+            "description": "CORENup is a deep learning model for nucleosome identification. CORENup processes a DNA sequence as input using one-hot representation and combines in a parallel fashion a fully convolutional neural network and a recurrent layer. These two parallel levels are devoted to catching both non periodic and periodic DNA string features."
+          },
+          {
+            "id": "profeatx",
+            "description": "A parallelized protein feature extraction suite for machine learning."
+          },
+          {
+            "id": "promocell",
+            "description": "ProMoCell (Protein interaction-based functional Modules of the Cell of an organism) is a network-based zoning approach that can determine the functional modules of a cell of an organism and can potentially be utilized for parallel whole-cell simulation. ProMoCell is a single-click web service and it is very simple, user-friendly and easy to use. Presumably, no other web services like ProMoCell exists till date."
+          },
+          {
+            "id": "SW-Tandem",
+            "description": "Tool for large-scale peptide identification with parallel spectrum dot product on Sunway TaihuLight."
+          },
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "sledgehmmer",
+            "description": "Tool for searching the Pfam database using a parallelized version of the program hmmpfam. The user can perform queries with one or more sequences at a time and then receive the results by e-mail."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          },
+          {
+            "id": "parkvfinder",
+            "description": "Parallel KVFinder (parKVFinder) is an open-source software designed for the detection and spatial characterization (shape, volume, area and surrounding residues) of any type of biomolecular cavity. parKVFinder is available alongside an easy-to-use PyMOL plugin (PyMOL2 parKVFinder Tools) with an intuitive graphical user interface that allows users to explore customizable parameters for cavity detection and characterization."
+          },
+          {
+            "id": "pykvfinder",
+            "description": "Python-C Parallel KVFinder (pyKVFinder) is an efficient and integrable Python package for biomolecular cavity detection and characterization in data science. Besides conventional cavity properties such as volume and area, which are stored as Python dictionaries, pyKVFinder computes cavity depth and hydropathy. Similar to cavity points, these spatial and physicochemical properties are stored as Python ndarrays and can be visualized using Python molecular visualization widgets. In general, pyKVFinder is designed for efficient scripting routines built on easy-to-handle data structures, such as Python dictionaries and NumPy N-dimensional arrays (ndarrays), and can be building blocks for data science and drug design applications."
+          },
+          {
+            "id": "qpms9",
+            "description": "Parallel exact qPMS (quorum Planted Motif Search) algorithm that offers significant runtime improvements on DNA and protein datasets."
+          }
+        ]
+      },
+      "3": {
+        "TP": 27,
+        "FP": 1,
+        "FN": 12,
+        "TN": 54,
+        "Accuracy": 0.8617021276595744,
+        "Precision": 0.9642857142857143,
+        "Recall": 0.6923076923076923,
+        "FalsePositive": [
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "corenup",
+            "description": "CORENup is a deep learning model for nucleosome identification. CORENup processes a DNA sequence as input using one-hot representation and combines in a parallel fashion a fully convolutional neural network and a recurrent layer. These two parallel levels are devoted to catching both non periodic and periodic DNA string features."
+          },
+          {
+            "id": "promocell",
+            "description": "ProMoCell (Protein interaction-based functional Modules of the Cell of an organism) is a network-based zoning approach that can determine the functional modules of a cell of an organism and can potentially be utilized for parallel whole-cell simulation. ProMoCell is a single-click web service and it is very simple, user-friendly and easy to use. Presumably, no other web services like ProMoCell exists till date."
+          },
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "sledgehmmer",
+            "description": "Tool for searching the Pfam database using a parallelized version of the program hmmpfam. The user can perform queries with one or more sequences at a time and then receive the results by e-mail."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          },
+          {
+            "id": "parkvfinder",
+            "description": "Parallel KVFinder (parKVFinder) is an open-source software designed for the detection and spatial characterization (shape, volume, area and surrounding residues) of any type of biomolecular cavity. parKVFinder is available alongside an easy-to-use PyMOL plugin (PyMOL2 parKVFinder Tools) with an intuitive graphical user interface that allows users to explore customizable parameters for cavity detection and characterization."
+          },
+          {
+            "id": "pykvfinder",
+            "description": "Python-C Parallel KVFinder (pyKVFinder) is an efficient and integrable Python package for biomolecular cavity detection and characterization in data science. Besides conventional cavity properties such as volume and area, which are stored as Python dictionaries, pyKVFinder computes cavity depth and hydropathy. Similar to cavity points, these spatial and physicochemical properties are stored as Python ndarrays and can be visualized using Python molecular visualization widgets. In general, pyKVFinder is designed for efficient scripting routines built on easy-to-handle data structures, such as Python dictionaries and NumPy N-dimensional arrays (ndarrays), and can be building blocks for data science and drug design applications."
+          },
+          {
+            "id": "qpms9",
+            "description": "Parallel exact qPMS (quorum Planted Motif Search) algorithm that offers significant runtime improvements on DNA and protein datasets."
+          }
+        ]
+      },
+      "4": {
+        "TP": 29,
+        "FP": 1,
+        "FN": 10,
+        "TN": 54,
+        "Accuracy": 0.8829787234042553,
+        "Precision": 0.9666666666666667,
+        "Recall": 0.7435897435897436,
+        "FalsePositive": [
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "promocell",
+            "description": "ProMoCell (Protein interaction-based functional Modules of the Cell of an organism) is a network-based zoning approach that can determine the functional modules of a cell of an organism and can potentially be utilized for parallel whole-cell simulation. ProMoCell is a single-click web service and it is very simple, user-friendly and easy to use. Presumably, no other web services like ProMoCell exists till date."
+          },
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          },
+          {
+            "id": "parkvfinder",
+            "description": "Parallel KVFinder (parKVFinder) is an open-source software designed for the detection and spatial characterization (shape, volume, area and surrounding residues) of any type of biomolecular cavity. parKVFinder is available alongside an easy-to-use PyMOL plugin (PyMOL2 parKVFinder Tools) with an intuitive graphical user interface that allows users to explore customizable parameters for cavity detection and characterization."
+          },
+          {
+            "id": "pykvfinder",
+            "description": "Python-C Parallel KVFinder (pyKVFinder) is an efficient and integrable Python package for biomolecular cavity detection and characterization in data science. Besides conventional cavity properties such as volume and area, which are stored as Python dictionaries, pyKVFinder computes cavity depth and hydropathy. Similar to cavity points, these spatial and physicochemical properties are stored as Python ndarrays and can be visualized using Python molecular visualization widgets. In general, pyKVFinder is designed for efficient scripting routines built on easy-to-handle data structures, such as Python dictionaries and NumPy N-dimensional arrays (ndarrays), and can be building blocks for data science and drug design applications."
+          },
+          {
+            "id": "qpms9",
+            "description": "Parallel exact qPMS (quorum Planted Motif Search) algorithm that offers significant runtime improvements on DNA and protein datasets."
+          }
+        ]
+      },
+      "5": {
+        "TP": 30,
+        "FP": 2,
+        "FN": 9,
+        "TN": 53,
+        "Accuracy": 0.8829787234042553,
+        "Precision": 0.9375,
+        "Recall": 0.7692307692307693,
+        "FalsePositive": [
+          {
+            "id": "petal",
+            "description": "PETAL (ParallEl paThways AnaLyzer): a python tool for deep analysis of biological pathways.\n\n\nPETAL software is written in the Python 3 programming language. It contains a set of tools for pathway analysis and discovery of novel therapeutic targets. The approach allows you to scan and perform a in-depth search of the biological pathway to analyze less recurrent pathways, detect nodes that are far from the initial target nodes and showing the pathway of origin from which it was taken the gene."
+          },
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "promocell",
+            "description": "ProMoCell (Protein interaction-based functional Modules of the Cell of an organism) is a network-based zoning approach that can determine the functional modules of a cell of an organism and can potentially be utilized for parallel whole-cell simulation. ProMoCell is a single-click web service and it is very simple, user-friendly and easy to use. Presumably, no other web services like ProMoCell exists till date."
+          },
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          },
+          {
+            "id": "pykvfinder",
+            "description": "Python-C Parallel KVFinder (pyKVFinder) is an efficient and integrable Python package for biomolecular cavity detection and characterization in data science. Besides conventional cavity properties such as volume and area, which are stored as Python dictionaries, pyKVFinder computes cavity depth and hydropathy. Similar to cavity points, these spatial and physicochemical properties are stored as Python ndarrays and can be visualized using Python molecular visualization widgets. In general, pyKVFinder is designed for efficient scripting routines built on easy-to-handle data structures, such as Python dictionaries and NumPy N-dimensional arrays (ndarrays), and can be building blocks for data science and drug design applications."
+          },
+          {
+            "id": "qpms9",
+            "description": "Parallel exact qPMS (quorum Planted Motif Search) algorithm that offers significant runtime improvements on DNA and protein datasets."
+          }
+        ]
+      },
+      "6": {
+        "TP": 31,
+        "FP": 2,
+        "FN": 8,
+        "TN": 53,
+        "Accuracy": 0.8936170212765957,
+        "Precision": 0.9393939393939394,
+        "Recall": 0.7948717948717948,
+        "FalsePositive": [
+          {
+            "id": "petal",
+            "description": "PETAL (ParallEl paThways AnaLyzer): a python tool for deep analysis of biological pathways.\n\n\nPETAL software is written in the Python 3 programming language. It contains a set of tools for pathway analysis and discovery of novel therapeutic targets. The approach allows you to scan and perform a in-depth search of the biological pathway to analyze less recurrent pathways, detect nodes that are far from the initial target nodes and showing the pathway of origin from which it was taken the gene."
+          },
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "promocell",
+            "description": "ProMoCell (Protein interaction-based functional Modules of the Cell of an organism) is a network-based zoning approach that can determine the functional modules of a cell of an organism and can potentially be utilized for parallel whole-cell simulation. ProMoCell is a single-click web service and it is very simple, user-friendly and easy to use. Presumably, no other web services like ProMoCell exists till date."
+          },
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          },
+          {
+            "id": "pykvfinder",
+            "description": "Python-C Parallel KVFinder (pyKVFinder) is an efficient and integrable Python package for biomolecular cavity detection and characterization in data science. Besides conventional cavity properties such as volume and area, which are stored as Python dictionaries, pyKVFinder computes cavity depth and hydropathy. Similar to cavity points, these spatial and physicochemical properties are stored as Python ndarrays and can be visualized using Python molecular visualization widgets. In general, pyKVFinder is designed for efficient scripting routines built on easy-to-handle data structures, such as Python dictionaries and NumPy N-dimensional arrays (ndarrays), and can be building blocks for data science and drug design applications."
+          }
+        ]
+      },
+      "7": {
+        "TP": 33,
+        "FP": 2,
+        "FN": 6,
+        "TN": 53,
+        "Accuracy": 0.9148936170212766,
+        "Precision": 0.9428571428571428,
+        "Recall": 0.8461538461538461,
+        "FalsePositive": [
+          {
+            "id": "petal",
+            "description": "PETAL (ParallEl paThways AnaLyzer): a python tool for deep analysis of biological pathways.\n\n\nPETAL software is written in the Python 3 programming language. It contains a set of tools for pathway analysis and discovery of novel therapeutic targets. The approach allows you to scan and perform a in-depth search of the biological pathway to analyze less recurrent pathways, detect nodes that are far from the initial target nodes and showing the pathway of origin from which it was taken the gene."
+          },
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          }
+        ]
+      },
+      "8": {
+        "TP": 33,
+        "FP": 2,
+        "FN": 6,
+        "TN": 53,
+        "Accuracy": 0.9148936170212766,
+        "Precision": 0.9428571428571428,
+        "Recall": 0.8461538461538461,
+        "FalsePositive": [
+          {
+            "id": "petal",
+            "description": "PETAL (ParallEl paThways AnaLyzer): a python tool for deep analysis of biological pathways.\n\n\nPETAL software is written in the Python 3 programming language. It contains a set of tools for pathway analysis and discovery of novel therapeutic targets. The approach allows you to scan and perform a in-depth search of the biological pathway to analyze less recurrent pathways, detect nodes that are far from the initial target nodes and showing the pathway of origin from which it was taken the gene."
+          },
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          }
+        ]
+      },
+      "9": {
+        "TP": 33,
+        "FP": 2,
+        "FN": 6,
+        "TN": 53,
+        "Accuracy": 0.9148936170212766,
+        "Precision": 0.9428571428571428,
+        "Recall": 0.8461538461538461,
+        "FalsePositive": [
+          {
+            "id": "petal",
+            "description": "PETAL (ParallEl paThways AnaLyzer): a python tool for deep analysis of biological pathways.\n\n\nPETAL software is written in the Python 3 programming language. It contains a set of tools for pathway analysis and discovery of novel therapeutic targets. The approach allows you to scan and perform a in-depth search of the biological pathway to analyze less recurrent pathways, detect nodes that are far from the initial target nodes and showing the pathway of origin from which it was taken the gene."
+          },
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          }
+        ]
+      },
+      "10": {
+        "TP": 33,
+        "FP": 2,
+        "FN": 6,
+        "TN": 53,
+        "Accuracy": 0.9148936170212766,
+        "Precision": 0.9428571428571428,
+        "Recall": 0.8461538461538461,
+        "FalsePositive": [
+          {
+            "id": "petal",
+            "description": "PETAL (ParallEl paThways AnaLyzer): a python tool for deep analysis of biological pathways.\n\n\nPETAL software is written in the Python 3 programming language. It contains a set of tools for pathway analysis and discovery of novel therapeutic targets. The approach allows you to scan and perform a in-depth search of the biological pathway to analyze less recurrent pathways, detect nodes that are far from the initial target nodes and showing the pathway of origin from which it was taken the gene."
+          },
+          {
+            "id": "quest",
+            "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "paramed",
+            "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+          },
+          {
+            "id": "pe-assembler",
+            "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+          },
+          {
+            "id": "trap-seq",
+            "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+          },
+          {
+            "id": "starbeast3",
+            "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+          },
+          {
+            "id": "jfuzzymachine",
+            "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+          },
+          {
+            "id": "MARGO",
+            "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+          }
+        ]
+      }
+    },
+    "DependencyParsing": {
+      "TP": 28,
+      "FP": 1,
+      "FN": 11,
+      "TN": 54,
+      "Accuracy": 0.8723404255319149,
+      "Precision": 0.9655172413793104,
+      "Recall": 0.717948717948718,
+      "FalsePositive": [
+        {
+          "id": "quest",
+          "description": "Kernel Density Estimator-based package for analysis of massively parallel sequencing data from chromatin immunoprecipitations (ChIP-seq or ChIPseq)."
+        }
+      ],
+      "FalseNegative": [
+        {
+          "id": "corenup",
+          "description": "CORENup is a deep learning model for nucleosome identification. CORENup processes a DNA sequence as input using one-hot representation and combines in a parallel fashion a fully convolutional neural network and a recurrent layer. These two parallel levels are devoted to catching both non periodic and periodic DNA string features."
+        },
+        {
+          "id": "paramed",
+          "description": "A parallel corpus for English-Chinese translation in the biomedical domain."
+        },
+        {
+          "id": "pe-assembler",
+          "description": "A simple 3' extension approach to assembling paired-end reads and capable of parallelization."
+        },
+        {
+          "id": "trap-seq",
+          "description": "Massively parallel quantification of CRISPR editing in cells by TRAP-seq enables better design of Cas9, ABE, CBE gRNAs of high efficiency and accuracy."
+        },
+        {
+          "id": "starbeast3",
+          "description": "BEAST 2 based package for Bayesian multispecies coalescent (MSC) analyses using efficient and parallelised MCMC operators."
+        },
+        {
+          "id": "jfuzzymachine",
+          "description": "A Multistaged Hyperparallel Optimization of the Fuzzy-Logic Mechanistic Model of Molecular Regulation.\n\nElucidating mechanistic relationships among intracellular macromolecules is fundamental to understanding the molecular basis of normal and diseased processes. The classical fuzzy logic approach employs varying degrees of truth to describe relationships between interacting molecules. jFuzzyMachine implements the fuzzy logic approach to elucidate mechanistic relationships among biological molecules and makes more readily available the fuzzy logic inference approach in a freely available tool."
+        },
+        {
+          "id": "MARGO",
+          "description": "MARGO (Massively Automated Real-time GUI for Object-tracking).\n\nFast object tracking in real time allows convenient tracking of very large numbers of animals and closed-loop experiments that control stimuli for many animals in parallel. We developed MARGO, a MATLAB-based, real-time animal tracking suite for custom behavioral experiments. We demonstrated that MARGO can rapidly and accurately track large numbers of animals in parallel over very long timescales, typically when spatially separated such as in multiwell plates. We incorporated control of peripheral hardware, and implemented a flexible software architecture for defining new experimental routines. These features enable closed-loop delivery of stimuli to many individuals simultaneously. We highlight MARGO's ability to coordinate tracking and hardware control with two custom behavioral assays (measuring phototaxis and optomotor response) and one optogenetic operant conditioning assay."
+        },
+        {
+          "id": "parallelgwas",
+          "description": "Developing parallel computing tools for genome-wide association studies."
+        },
+        {
+          "id": "parkvfinder",
+          "description": "Parallel KVFinder (parKVFinder) is an open-source software designed for the detection and spatial characterization (shape, volume, area and surrounding residues) of any type of biomolecular cavity. parKVFinder is available alongside an easy-to-use PyMOL plugin (PyMOL2 parKVFinder Tools) with an intuitive graphical user interface that allows users to explore customizable parameters for cavity detection and characterization."
+        },
+        {
+          "id": "pykvfinder",
+          "description": "Python-C Parallel KVFinder (pyKVFinder) is an efficient and integrable Python package for biomolecular cavity detection and characterization in data science. Besides conventional cavity properties such as volume and area, which are stored as Python dictionaries, pyKVFinder computes cavity depth and hydropathy. Similar to cavity points, these spatial and physicochemical properties are stored as Python ndarrays and can be visualized using Python molecular visualization widgets. In general, pyKVFinder is designed for efficient scripting routines built on easy-to-handle data structures, such as Python dictionaries and NumPy N-dimensional arrays (ndarrays), and can be building blocks for data science and drug design applications."
+        },
+        {
+          "id": "parmigene",
+          "description": "The package provides a parallel estimation of the mutual information based on entropy estimates from k-nearest neighbours distances and algorithms for the reconstruction of gene regulatory networks."
+        }
+      ]
+    }
+  },
+  "GPU": {
+    "KeywordSearch": {
+      "TP": 16,
+      "FP": 1,
+      "FN": 0,
+      "TN": 77,
+      "Accuracy": 0.9893617021276596,
+      "Precision": 0.9411764705882353,
+      "Recall": 1.0,
+      "FalsePositive": [
+        {
+          "id": "mummergpu",
+          "description": "MUMmerGPU is a low cost, ultra-fast sequence alignment program designed to handle the increasing volume of data produced by HTS."
+        }
+      ],
+      "FalseNegative": []
+    },
+    "WordDistance": {
+      "0": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 14,
+        "TN": 78,
+        "Accuracy": 0.851063829787234,
+        "Precision": 1.0,
+        "Recall": 0.125,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "comer2",
+            "description": "GPU-accelerated sensitive and specific homology searches.\n\nCOMER2, cross-platform software for protein remote homology search.\n\nThe COMER method based on sequence profile-profile comparison is one of the most sensitive and accurate computational tools developed for protein alignment and homology search. COMER version 2.1 (COMER2) represents one of the fastest implementations of calculations for sensitive protein homology search. High COMER2 performance is achieved by harnessing the power of the Graphics processing unit (GPU). Hence, a GPU is expected to be installed on the system.\n\nCOMER2, a cross-platform software package for protein remote homology search and alignment."
+          },
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cuda-meme",
+            "description": "Motif discovery software based on MEME algorithm for a single GPU device using CUDA programming model. At present, it only supports the OOPS and ZOOPS models."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "h-blast",
+            "description": "Fast protein sequence alignment toolkit on heterogeneous computers with GPUs ."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "SigUNet",
+            "description": "signal peptide recognition based on semantic segmentation.\n\nA signal peptide predictor based on deep learning.\n\nFor CPU: pip3 install -r requirement.cpu.txt.\n\nFor GPU (suggest): pip3 install -r requirement.gpu.txt"
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "1": {
+        "TP": 3,
+        "FP": 0,
+        "FN": 13,
+        "TN": 78,
+        "Accuracy": 0.8617021276595744,
+        "Precision": 1.0,
+        "Recall": 0.1875,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "comer2",
+            "description": "GPU-accelerated sensitive and specific homology searches.\n\nCOMER2, cross-platform software for protein remote homology search.\n\nThe COMER method based on sequence profile-profile comparison is one of the most sensitive and accurate computational tools developed for protein alignment and homology search. COMER version 2.1 (COMER2) represents one of the fastest implementations of calculations for sensitive protein homology search. High COMER2 performance is achieved by harnessing the power of the Graphics processing unit (GPU). Hence, a GPU is expected to be installed on the system.\n\nCOMER2, a cross-platform software package for protein remote homology search and alignment."
+          },
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "h-blast",
+            "description": "Fast protein sequence alignment toolkit on heterogeneous computers with GPUs ."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "SigUNet",
+            "description": "signal peptide recognition based on semantic segmentation.\n\nA signal peptide predictor based on deep learning.\n\nFor CPU: pip3 install -r requirement.cpu.txt.\n\nFor GPU (suggest): pip3 install -r requirement.gpu.txt"
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "2": {
+        "TP": 4,
+        "FP": 0,
+        "FN": 12,
+        "TN": 78,
+        "Accuracy": 0.8723404255319149,
+        "Precision": 1.0,
+        "Recall": 0.25,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "h-blast",
+            "description": "Fast protein sequence alignment toolkit on heterogeneous computers with GPUs ."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "SigUNet",
+            "description": "signal peptide recognition based on semantic segmentation.\n\nA signal peptide predictor based on deep learning.\n\nFor CPU: pip3 install -r requirement.cpu.txt.\n\nFor GPU (suggest): pip3 install -r requirement.gpu.txt"
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "3": {
+        "TP": 4,
+        "FP": 0,
+        "FN": 12,
+        "TN": 78,
+        "Accuracy": 0.8723404255319149,
+        "Precision": 1.0,
+        "Recall": 0.25,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "h-blast",
+            "description": "Fast protein sequence alignment toolkit on heterogeneous computers with GPUs ."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "SigUNet",
+            "description": "signal peptide recognition based on semantic segmentation.\n\nA signal peptide predictor based on deep learning.\n\nFor CPU: pip3 install -r requirement.cpu.txt.\n\nFor GPU (suggest): pip3 install -r requirement.gpu.txt"
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "4": {
+        "TP": 4,
+        "FP": 0,
+        "FN": 12,
+        "TN": 78,
+        "Accuracy": 0.8723404255319149,
+        "Precision": 1.0,
+        "Recall": 0.25,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "h-blast",
+            "description": "Fast protein sequence alignment toolkit on heterogeneous computers with GPUs ."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "SigUNet",
+            "description": "signal peptide recognition based on semantic segmentation.\n\nA signal peptide predictor based on deep learning.\n\nFor CPU: pip3 install -r requirement.cpu.txt.\n\nFor GPU (suggest): pip3 install -r requirement.gpu.txt"
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "5": {
+        "TP": 5,
+        "FP": 0,
+        "FN": 11,
+        "TN": 78,
+        "Accuracy": 0.8829787234042553,
+        "Precision": 1.0,
+        "Recall": 0.3125,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "SigUNet",
+            "description": "signal peptide recognition based on semantic segmentation.\n\nA signal peptide predictor based on deep learning.\n\nFor CPU: pip3 install -r requirement.cpu.txt.\n\nFor GPU (suggest): pip3 install -r requirement.gpu.txt"
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "6": {
+        "TP": 6,
+        "FP": 0,
+        "FN": 10,
+        "TN": 78,
+        "Accuracy": 0.8936170212765957,
+        "Precision": 1.0,
+        "Recall": 0.375,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "7": {
+        "TP": 6,
+        "FP": 0,
+        "FN": 10,
+        "TN": 78,
+        "Accuracy": 0.8936170212765957,
+        "Precision": 1.0,
+        "Recall": 0.375,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "8": {
+        "TP": 6,
+        "FP": 0,
+        "FN": 10,
+        "TN": 78,
+        "Accuracy": 0.8936170212765957,
+        "Precision": 1.0,
+        "Recall": 0.375,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "9": {
+        "TP": 6,
+        "FP": 0,
+        "FN": 10,
+        "TN": 78,
+        "Accuracy": 0.8936170212765957,
+        "Precision": 1.0,
+        "Recall": 0.375,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      },
+      "10": {
+        "TP": 6,
+        "FP": 0,
+        "FN": 10,
+        "TN": 78,
+        "Accuracy": 0.8936170212765957,
+        "Precision": 1.0,
+        "Recall": 0.375,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "gpu-cassert",
+            "description": "The GPU-based implementation of the CASSERT algorithm for protein 3D structure similarity searching. The algorithm is based on the two-phase alignment of protein structures when matching fragments of compared proteins."
+          },
+          {
+            "id": "snapMRF",
+            "description": "GPU-accelerated magnetic resonance fingerprinting dictionary generation and matching using extended phase graphs."
+          },
+          {
+            "id": "cudammc",
+            "description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling."
+          },
+          {
+            "id": "perceptron",
+            "description": "PERCEPTRON is an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics. PERCEPTRON is a freely available web-based proteoform identification pipeline for Top-Down Proteomics (TDP)."
+          },
+          {
+            "id": "g-blastn",
+            "description": "GPU-accelerated nucleotide alignment tool based on the widely used NCBI-BLAST."
+          },
+          {
+            "id": "mutationTCN",
+            "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+          },
+          {
+            "id": "gpumotif",
+            "description": "GPU-accelerated ultra-fast and energy-efficient motif analysis program."
+          },
+          {
+            "id": "normirazor",
+            "description": "Tool applying GPU-accelerated computing for determination of internal references in microRNA transcription studies.\n\nGitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security."
+          },
+          {
+            "id": "isac",
+            "description": "Accelerated 2D Classification With ISAC Using GPUs."
+          },
+          {
+            "id": "uni_dock",
+            "description": "GPU-accelerated docking."
+          }
+        ]
+      }
+    },
+    "DependencyParsing": {
+      "TP": 13,
+      "FP": 0,
+      "FN": 3,
+      "TN": 78,
+      "Accuracy": 0.9680851063829787,
+      "Precision": 1.0,
+      "Recall": 0.8125,
+      "FalsePositive": [],
+      "FalseNegative": [
+        {
+          "id": "h-blast",
+          "description": "Fast protein sequence alignment toolkit on heterogeneous computers with GPUs ."
+        },
+        {
+          "id": "mutationTCN",
+          "description": "Prediction of Mutation Effects using a Deep Temporal Convolutional Network.\n\nThis is the code for the paper Prediction of Mutation Effects using a Deep Temporal Convolutional Network. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz873/5634146.\n\nThe code is compatible with tensorflow-gpu=1.10.0 and python=2.7"
+        },
+        {
+          "id": "isac",
+          "description": "Accelerated 2D Classification With ISAC Using GPUs."
+        }
+      ]
+    }
+  },
+  "distributed": {
+    "KeywordSearch": {
+      "TP": 9,
+      "FP": 9,
+      "FN": 0,
+      "TN": 76,
+      "Accuracy": 0.9042553191489362,
+      "Precision": 0.5,
+      "Recall": 1.0,
+      "FalsePositive": [
+        {
+          "id": "Treerecs",
+          "description": "Treerecs is an open-source (species- and gene-) tree reconciliation software distributed under the GNU AGPL licence."
+        },
+        {
+          "id": "croco-xlink",
+          "description": "A a user-centred tool to convert results from crosslinking mass spectrometry experiments | Convert data formats from chemical cross-linking mass spectrometry (XL-MS) | The CroCo cross-link converter \u2014 CroCo documentation | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format) | The CroCo cross-link converter \u00b6 | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format). It is distributed as graphical programme to be run from an executable and as a Python module to be integrated into workflows"
+        },
+        {
+          "id": "maude",
+          "description": "Inferring expression changes in sorting-based CRISPR screens.\n\nMAUDE: Mean Alterations Using Discrete Expression.\n\nMAUDE is an R package for finding differences in means of normally distributed (or nearly so) data, via measuring abundances in discrete bins."
+        },
+        {
+          "id": "node2loc",
+          "description": "Predicting protein subcellular location using learned distributed representations from a protein-protein network | Predicting protein subcellular location using node embedding | we present a deep learning based method, node2loc, to predict protein subcellular location. node2loc first learns distributed representations of proteins in a protein-protein network, which acquires representations from unlabeled data for downstream tasks. Then the learned representations are further fed into a recurrent neural network (RNN) to predict subcellular locations | To identify the functions of a protein, we first need know where this protein is located. Interacting proteins tend to locate in the same subcellular location. Thus, it is imperative to take the protein-protein interactions into account for computational identification of protein subcellular locations"
+        },
+        {
+          "id": "Gene2vec",
+          "description": "Machine learning method that utilizes transcriptome-wide gene co-expression to generate a distributed representation of genes."
+        },
+        {
+          "id": "iblp",
+          "description": "An XGBoost-Based Predictor for Identifying Bioluminescent Proteins.\n\nThe role of this page is a brief introduction to iBLP.\n\n\nBioluminescent proteins are a class of proteins that widely distributed in many living organisms with various mechanisms of light emission including bioluminescence and chemiluminescence from luminous organisms."
+        },
+        {
+          "id": "rKIN",
+          "description": "Kernel-based method for estimating isotopic niche size and overlap.\n\nThe isotopic niche of consumers represents biologically relevant information on resource and habitat use. Several tools have been developed to quantify niche size and overlap. Nonetheless, methods adapted by spatial ecologists to quantify animal home ranges can be modified for use in stable isotope ecology when data are not normally distributed in bivariate space. We offer a tool that draws on existing spatial metrics, such as Minimum Convex Polygon (MCP) and Standard Ellipse Area (SEA), and add novel metrics using Kernel Utilization Density (KUD) estimators to measure isotopic niche size and overlap. We present examples using empirical and simulated data to demonstrate the performance of the package Kernel Isotopic Niches in R (rKIN) under various scenarios."
+        },
+        {
+          "id": "simcov",
+          "description": "Spatially distributed infection increases viral load in a computational model of SARS-CoV-2 lung infection."
+        },
+        {
+          "id": "scg",
+          "description": "A new statistical model and machine learning inference algorithm designed to determine the pattern of how DNA mutations are distributed in individual cells of a tumour. The software provides implementation of several probabilistic models for clustering single cell (nucleus) data and inferring clonal genotypes."
+        }
+      ],
+      "FalseNegative": []
+    },
+    "WordDistance": {
+      "0": {
+        "TP": 4,
+        "FP": 0,
+        "FN": 5,
+        "TN": 85,
+        "Accuracy": 0.9468085106382979,
+        "Precision": 1.0,
+        "Recall": 0.4444444444444444,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "MRUniNovo",
+            "description": "Tool for de novo peptide sequencing utilizing the hadoop distributed computing framework."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "1": {
+        "TP": 5,
+        "FP": 0,
+        "FN": 4,
+        "TN": 85,
+        "Accuracy": 0.9574468085106383,
+        "Precision": 1.0,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "2": {
+        "TP": 5,
+        "FP": 0,
+        "FN": 4,
+        "TN": 85,
+        "Accuracy": 0.9574468085106383,
+        "Precision": 1.0,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "3": {
+        "TP": 5,
+        "FP": 0,
+        "FN": 4,
+        "TN": 85,
+        "Accuracy": 0.9574468085106383,
+        "Precision": 1.0,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "4": {
+        "TP": 5,
+        "FP": 1,
+        "FN": 4,
+        "TN": 84,
+        "Accuracy": 0.9468085106382979,
+        "Precision": 0.8333333333333334,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [
+          {
+            "id": "rKIN",
+            "description": "Kernel-based method for estimating isotopic niche size and overlap.\n\nThe isotopic niche of consumers represents biologically relevant information on resource and habitat use. Several tools have been developed to quantify niche size and overlap. Nonetheless, methods adapted by spatial ecologists to quantify animal home ranges can be modified for use in stable isotope ecology when data are not normally distributed in bivariate space. We offer a tool that draws on existing spatial metrics, such as Minimum Convex Polygon (MCP) and Standard Ellipse Area (SEA), and add novel metrics using Kernel Utilization Density (KUD) estimators to measure isotopic niche size and overlap. We present examples using empirical and simulated data to demonstrate the performance of the package Kernel Isotopic Niches in R (rKIN) under various scenarios."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "5": {
+        "TP": 5,
+        "FP": 2,
+        "FN": 4,
+        "TN": 83,
+        "Accuracy": 0.9361702127659575,
+        "Precision": 0.7142857142857143,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [
+          {
+            "id": "rKIN",
+            "description": "Kernel-based method for estimating isotopic niche size and overlap.\n\nThe isotopic niche of consumers represents biologically relevant information on resource and habitat use. Several tools have been developed to quantify niche size and overlap. Nonetheless, methods adapted by spatial ecologists to quantify animal home ranges can be modified for use in stable isotope ecology when data are not normally distributed in bivariate space. We offer a tool that draws on existing spatial metrics, such as Minimum Convex Polygon (MCP) and Standard Ellipse Area (SEA), and add novel metrics using Kernel Utilization Density (KUD) estimators to measure isotopic niche size and overlap. We present examples using empirical and simulated data to demonstrate the performance of the package Kernel Isotopic Niches in R (rKIN) under various scenarios."
+          },
+          {
+            "id": "scg",
+            "description": "A new statistical model and machine learning inference algorithm designed to determine the pattern of how DNA mutations are distributed in individual cells of a tumour. The software provides implementation of several probabilistic models for clustering single cell (nucleus) data and inferring clonal genotypes."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "6": {
+        "TP": 5,
+        "FP": 2,
+        "FN": 4,
+        "TN": 83,
+        "Accuracy": 0.9361702127659575,
+        "Precision": 0.7142857142857143,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [
+          {
+            "id": "rKIN",
+            "description": "Kernel-based method for estimating isotopic niche size and overlap.\n\nThe isotopic niche of consumers represents biologically relevant information on resource and habitat use. Several tools have been developed to quantify niche size and overlap. Nonetheless, methods adapted by spatial ecologists to quantify animal home ranges can be modified for use in stable isotope ecology when data are not normally distributed in bivariate space. We offer a tool that draws on existing spatial metrics, such as Minimum Convex Polygon (MCP) and Standard Ellipse Area (SEA), and add novel metrics using Kernel Utilization Density (KUD) estimators to measure isotopic niche size and overlap. We present examples using empirical and simulated data to demonstrate the performance of the package Kernel Isotopic Niches in R (rKIN) under various scenarios."
+          },
+          {
+            "id": "scg",
+            "description": "A new statistical model and machine learning inference algorithm designed to determine the pattern of how DNA mutations are distributed in individual cells of a tumour. The software provides implementation of several probabilistic models for clustering single cell (nucleus) data and inferring clonal genotypes."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "7": {
+        "TP": 5,
+        "FP": 3,
+        "FN": 4,
+        "TN": 82,
+        "Accuracy": 0.925531914893617,
+        "Precision": 0.625,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [
+          {
+            "id": "croco-xlink",
+            "description": "A a user-centred tool to convert results from crosslinking mass spectrometry experiments | Convert data formats from chemical cross-linking mass spectrometry (XL-MS) | The CroCo cross-link converter \u2014 CroCo documentation | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format) | The CroCo cross-link converter \u00b6 | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format). It is distributed as graphical programme to be run from an executable and as a Python module to be integrated into workflows"
+          },
+          {
+            "id": "rKIN",
+            "description": "Kernel-based method for estimating isotopic niche size and overlap.\n\nThe isotopic niche of consumers represents biologically relevant information on resource and habitat use. Several tools have been developed to quantify niche size and overlap. Nonetheless, methods adapted by spatial ecologists to quantify animal home ranges can be modified for use in stable isotope ecology when data are not normally distributed in bivariate space. We offer a tool that draws on existing spatial metrics, such as Minimum Convex Polygon (MCP) and Standard Ellipse Area (SEA), and add novel metrics using Kernel Utilization Density (KUD) estimators to measure isotopic niche size and overlap. We present examples using empirical and simulated data to demonstrate the performance of the package Kernel Isotopic Niches in R (rKIN) under various scenarios."
+          },
+          {
+            "id": "scg",
+            "description": "A new statistical model and machine learning inference algorithm designed to determine the pattern of how DNA mutations are distributed in individual cells of a tumour. The software provides implementation of several probabilistic models for clustering single cell (nucleus) data and inferring clonal genotypes."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "8": {
+        "TP": 5,
+        "FP": 3,
+        "FN": 4,
+        "TN": 82,
+        "Accuracy": 0.925531914893617,
+        "Precision": 0.625,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [
+          {
+            "id": "croco-xlink",
+            "description": "A a user-centred tool to convert results from crosslinking mass spectrometry experiments | Convert data formats from chemical cross-linking mass spectrometry (XL-MS) | The CroCo cross-link converter \u2014 CroCo documentation | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format) | The CroCo cross-link converter \u00b6 | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format). It is distributed as graphical programme to be run from an executable and as a Python module to be integrated into workflows"
+          },
+          {
+            "id": "rKIN",
+            "description": "Kernel-based method for estimating isotopic niche size and overlap.\n\nThe isotopic niche of consumers represents biologically relevant information on resource and habitat use. Several tools have been developed to quantify niche size and overlap. Nonetheless, methods adapted by spatial ecologists to quantify animal home ranges can be modified for use in stable isotope ecology when data are not normally distributed in bivariate space. We offer a tool that draws on existing spatial metrics, such as Minimum Convex Polygon (MCP) and Standard Ellipse Area (SEA), and add novel metrics using Kernel Utilization Density (KUD) estimators to measure isotopic niche size and overlap. We present examples using empirical and simulated data to demonstrate the performance of the package Kernel Isotopic Niches in R (rKIN) under various scenarios."
+          },
+          {
+            "id": "scg",
+            "description": "A new statistical model and machine learning inference algorithm designed to determine the pattern of how DNA mutations are distributed in individual cells of a tumour. The software provides implementation of several probabilistic models for clustering single cell (nucleus) data and inferring clonal genotypes."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "9": {
+        "TP": 5,
+        "FP": 3,
+        "FN": 4,
+        "TN": 82,
+        "Accuracy": 0.925531914893617,
+        "Precision": 0.625,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [
+          {
+            "id": "croco-xlink",
+            "description": "A a user-centred tool to convert results from crosslinking mass spectrometry experiments | Convert data formats from chemical cross-linking mass spectrometry (XL-MS) | The CroCo cross-link converter \u2014 CroCo documentation | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format) | The CroCo cross-link converter \u00b6 | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format). It is distributed as graphical programme to be run from an executable and as a Python module to be integrated into workflows"
+          },
+          {
+            "id": "rKIN",
+            "description": "Kernel-based method for estimating isotopic niche size and overlap.\n\nThe isotopic niche of consumers represents biologically relevant information on resource and habitat use. Several tools have been developed to quantify niche size and overlap. Nonetheless, methods adapted by spatial ecologists to quantify animal home ranges can be modified for use in stable isotope ecology when data are not normally distributed in bivariate space. We offer a tool that draws on existing spatial metrics, such as Minimum Convex Polygon (MCP) and Standard Ellipse Area (SEA), and add novel metrics using Kernel Utilization Density (KUD) estimators to measure isotopic niche size and overlap. We present examples using empirical and simulated data to demonstrate the performance of the package Kernel Isotopic Niches in R (rKIN) under various scenarios."
+          },
+          {
+            "id": "scg",
+            "description": "A new statistical model and machine learning inference algorithm designed to determine the pattern of how DNA mutations are distributed in individual cells of a tumour. The software provides implementation of several probabilistic models for clustering single cell (nucleus) data and inferring clonal genotypes."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      },
+      "10": {
+        "TP": 5,
+        "FP": 3,
+        "FN": 4,
+        "TN": 82,
+        "Accuracy": 0.925531914893617,
+        "Precision": 0.625,
+        "Recall": 0.5555555555555556,
+        "FalsePositive": [
+          {
+            "id": "croco-xlink",
+            "description": "A a user-centred tool to convert results from crosslinking mass spectrometry experiments | Convert data formats from chemical cross-linking mass spectrometry (XL-MS) | The CroCo cross-link converter \u2014 CroCo documentation | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format) | The CroCo cross-link converter \u00b6 | CroCo converts multiple data format from cross-linking mass spectrometry software tools to xTable format (in csv format). It is distributed as graphical programme to be run from an executable and as a Python module to be integrated into workflows"
+          },
+          {
+            "id": "rKIN",
+            "description": "Kernel-based method for estimating isotopic niche size and overlap.\n\nThe isotopic niche of consumers represents biologically relevant information on resource and habitat use. Several tools have been developed to quantify niche size and overlap. Nonetheless, methods adapted by spatial ecologists to quantify animal home ranges can be modified for use in stable isotope ecology when data are not normally distributed in bivariate space. We offer a tool that draws on existing spatial metrics, such as Minimum Convex Polygon (MCP) and Standard Ellipse Area (SEA), and add novel metrics using Kernel Utilization Density (KUD) estimators to measure isotopic niche size and overlap. We present examples using empirical and simulated data to demonstrate the performance of the package Kernel Isotopic Niches in R (rKIN) under various scenarios."
+          },
+          {
+            "id": "scg",
+            "description": "A new statistical model and machine learning inference algorithm designed to determine the pattern of how DNA mutations are distributed in individual cells of a tumour. The software provides implementation of several probabilistic models for clustering single cell (nucleus) data and inferring clonal genotypes."
+          }
+        ],
+        "FalseNegative": [
+          {
+            "id": "msaprobs-mpi",
+            "description": "Fast and Accurate Multiple Sequence Alignment with MSAProbs-MPI.\n\nParallel and accurate multiple sequence alignment.\n\nMSAProbs is a well-established state-of-the-art multiple sequence alignment algorithm for protein sequences.\n\nMSAProbs-MPI is a parallelization of MSAProbs (v0.9.7) using MPI for distributed-memory systems."
+          },
+          {
+            "id": "NMF-RI",
+            "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+          },
+          {
+            "id": "parmatt",
+            "description": "parMatt: parallel multiple alignment of protein 3D-structures with translations and twists for distributed-memory systems. parMatt is based on a popular Matt software."
+          },
+          {
+            "id": "stpeter",
+            "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+          }
+        ]
+      }
+    },
+    "DependencyParsing": {
+      "TP": 6,
+      "FP": 1,
+      "FN": 3,
+      "TN": 84,
+      "Accuracy": 0.9574468085106383,
+      "Precision": 0.8571428571428571,
+      "Recall": 0.6666666666666666,
+      "FalsePositive": [
+        {
+          "id": "scg",
+          "description": "A new statistical model and machine learning inference algorithm designed to determine the pattern of how DNA mutations are distributed in individual cells of a tumour. The software provides implementation of several probabilistic models for clustering single cell (nucleus) data and inferring clonal genotypes."
+        }
+      ],
+      "FalseNegative": [
+        {
+          "id": "d-ee",
+          "description": "D-EE is a distributed dimensionality reduction and visualization tool. Its distributed storage and distributed computation technique allow us to efficiently analyze large-scale single-cell data at the cost of constant time speedup."
+        },
+        {
+          "id": "NMF-RI",
+          "description": "Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.\n\nMatlab code to spectrally unmix highly mixed multispectral flow and image cytometry data.\n\nTo use NMF-RI on new data (tissue or flow cytometry) we recommend to use the \u00b4main.m\u00b4 code distributed and load new cytometry data to the existing folder hierarchy."
+        },
+        {
+          "id": "stpeter",
+          "description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy."
+        }
+      ]
+    }
+  }
+}
