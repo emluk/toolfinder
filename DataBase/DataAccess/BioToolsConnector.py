@@ -1,8 +1,8 @@
-
 from sqlite3 import Error
 
 import Utility
 from settings import db_connection
+
 db = db_connection.connection
 
 
@@ -158,6 +158,24 @@ def create_biotools_tools_outputs():
     print("Done")
 
 
+def create_biotools_tools_labels():
+    print("Initializing biotools_tools_labels...", end=" ")
+    try:
+        db.execute('''create table biotools_tools_labels
+        (
+            Biotools_id INTEGER not null
+                constraint biotools_tools_labels_biotools_tools_info_Biotools_id_fk
+                    references biotools_tools_info,
+            Label       TEXT    not null,
+            constraint biotools_tools_labels_pk
+                primary key (Biotools_id, Label)
+        );''')
+    except Error as e:
+        print(f"Error: {str(e)}")
+        return
+    print("Done")
+
+
 def create_biotools_tables():
     create_biotools_info_table()
     create_biotools_operations_table()
@@ -165,6 +183,24 @@ def create_biotools_tables():
     create_biotools_tools_type()
     create_biotools_tools_inputs()
     create_biotools_tools_outputs()
+    create_biotools_tools_labels()
+
+
+def remove_label(biotools_id, label):
+    try:
+        db.execute(f"DELETE FROM biotools_tools_labels WHERE Biotools_id = '{biotools_id}' AND Label = '{label}';")
+        db.commit()
+    except Error as e:
+        print(f"Removing Label '{label}' for tool '{biotools_id}' failed. {str(e)}")
+
+def insert_label(biotools_id, label):
+    try:
+        db.execute(f'''insert into biotools_tools_labels (Biotools_id, Label)
+                       values ("{biotools_id}", "{label}") on conflict do nothing;''')
+        print(f"Added label '{label}' for tool '{biotools_id}'")
+        db.commit()
+    except Error as e:
+        print(f"Adding Label '{label}' for '{biotools_id}' failed")
 
 
 def insert_biotools(items):

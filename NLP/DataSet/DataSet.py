@@ -18,8 +18,8 @@ import Utility.Labelling
 
 
 db = db_connection.connection
-def create(operations, keywords, file_path):
-    tools = Search.Engine.search_tools(operations, keywords)
+def create(operations, keywords, input, output, label, file_path):
+    tools = Search.Engine.search_tools(operations, keywords, input, output, label)
     results = {}
     for t in sorted(tools):
         t_data = db.execute(f"SELECT Name, Description FROM biotools_tools_info WHERE Biotools_id = '{t}'").fetchone()

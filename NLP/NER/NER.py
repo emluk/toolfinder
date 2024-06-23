@@ -23,7 +23,7 @@ from nltk.corpus import stopwords
 stop_words = set(stopwords.words('english'))
 class KeywordSearch:
     @staticmethod
-    def evaluate(description, keyword_list):
+    def evaluate(description, keyword_list, dummy_parameter):
         for keyword in keyword_list:
             if keyword.lower() in description.lower():
                 return True
@@ -59,7 +59,7 @@ class WordDistance:
 
 class DependencyParsing:
     @staticmethod
-    def evaluate(description, dictionary):
+    def evaluate(description, dictionary, dummy_parameter):
         document = nlp(description)
         for token in document:
             if token.text.lower() in dictionary.keys():
